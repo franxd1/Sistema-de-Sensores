@@ -9,16 +9,16 @@ Este projeto contém um conjunto de programas em C para geração, organização
 
 ```
 /
-├── bin/                # Executáveis compilados (não versionados)
+├── bin/                # Executáveis compilados 
 ├── src/                # Código-fonte em C e script de compilação
 │   ├── consulta_instante.c
 │   ├── gera_teste.c
 │   ├── organiza_dados.c
 │   └── compilar.ps1
-├── sensor_data/        # Arquivos gerados com dados organizados por sensor (não versionados)
-├── testes/             # Arquivo de teste gerado pelo gera_teste.c (não versionado)
+├── sensor_data/        # Arquivos gerados com dados organizados por sensor 
+├── testes/             # Arquivo de teste gerado pelo gera_teste.c 
 │   └── test_data.txt
-└── .gitignore          # Arquivos e pastas ignorados pelo Git
+└── .gitignore          
 ```
 
 ---
@@ -46,7 +46,13 @@ No terminal do PowerShell, estando na pasta `src/`, execute:
 ```powershell
 .\compilar.ps1
 ```
+ou 
+```
+gcc -o ../bin/organiza_dados.exe organiza_dados.c
+gcc -o ../bin/consulta_instante.exe consulta_instante.c
+gcc -o ../bin/gera_teste.exe gera_teste.c
 
+```
 Isso irá compilar os três programas e gerar os executáveis dentro da pasta `bin/`.
 
 ---
@@ -108,10 +114,3 @@ Assim, evitamos versionar executáveis, dados gerados e arquivos de teste.
 
 ---
 
-## Contato
-
-Para dúvidas ou sugestões, abra uma issue ou entre em contato.
-
----
-
-Obrigado por usar este projeto!
