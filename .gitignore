@@ -1,3 +1,6 @@
-*.exe
-sensor_data/
-testes/test_data.txt
+\consulta_instante.exe
+\gera_teste.exe
+\organiza_dados.exe
+
+\test_data.txt
+sensor_data\
